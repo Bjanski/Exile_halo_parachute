@@ -1,8 +1,8 @@
 # ExHP
-Adds actions to a player so they can eject from air vehicles and pull parachutes without a parachute.
+Adds actions to a player so they can eject from air vehicles and pull a parachute without actually wearing one.
 
 ## Dependencies
- * Exile  
+ * Exile Mod
 
 ## Installation
 * Add the content from description.ext into you own description.ext inside the mission root folder.  
