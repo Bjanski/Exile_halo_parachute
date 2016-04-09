@@ -17,6 +17,8 @@
 
 */
 
+execVM "ExHP\customize.sqf";
+
 [] spawn {
 	while {true} do {
 		waitUntil{!isNil "ExileClientLoadedIn"};
