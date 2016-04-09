@@ -1,10 +1,12 @@
 # ExHP
-
 Adds actions to a player so they can eject from air vehicles and pull parachutes without a parachute.
 
+## Dependencies
+ * Exile  
+
 ## Installation
-Add the row from description.ext into you own description.ext inside the mission root folder. 
-Add the ExHP folder into the mission root folder.
+* Add the content from description.ext into you own description.ext inside the mission root folder.  
+* Add the ExHP folder into the mission root folder.
 
 ##Contribute
 Contributions are allways welcome, please read [Contribution Guidlines](CONTRIBUTING.md) first.
