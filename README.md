@@ -8,6 +8,9 @@ Adds actions to a player so they can eject from air vehicles and pull a parachut
 * Add the content from description.ext into you own description.ext inside the mission root folder.  
 * Add the ExHP folder into the mission root folder.
 
+## Update
+* Replace ExHP in the mission root folder
+
 ##Contribute
 Contributions are allways welcome, please read [Contribution Guidlines](CONTRIBUTING.md) first.
 
