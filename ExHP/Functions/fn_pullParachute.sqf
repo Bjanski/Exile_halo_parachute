@@ -34,6 +34,4 @@ player switchmove "HaloFreeFall_non";
 player setVelocity [(sin (getDir player)) * 50, (cos (getDir player)) * 50, -5];
 ExileJobParachuteFix = [0.25, ExileClient_object_player_parachuteFix, [], true] call ExileClient_system_thread_addtask;
 
-/*player moveInDriver _para;*/
-
 true

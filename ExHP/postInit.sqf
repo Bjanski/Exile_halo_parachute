@@ -27,8 +27,8 @@ execVM "ExHP\customize.sqf";
 		UISleep 0.1;
 		waitUntil{alive player};
 		
-		ExHP_ACTION_PARACHUTE = player addaction ["<t color='#E48A36'><img image='\a3\ui_f\data\gui\cfg\CommunicationMenu\supplydrop_ca.paa' /> Open Parachute!</t>", "call ExHP_fnc_pullParachute", [], 6, true, true, "", "vehicle player == player && (getPos player) select 2 > ExHP_ACTION_PARACHUTE_HEIGHT"];
-		ExHP_ACTION_EJECT = player addaction ["<t color='#E48A36'><img image='\a3\ui_f\data\gui\cfg\CommunicationMenu\supplydrop_ca.paa' /> Halo Jump</t>", "call ExHP_fnc_ejectPlayer", [], 6, false, true, "", "(vehicle player) != player && (getPos player) select 2 > ExHP_ACTION_EJECT_HEIGHT"];
+		ExHP_ACTION_PARACHUTE = player addaction ["<t color='#E48A36'><img image='\a3\ui_f\data\gui\cfg\CommunicationMenu\supplydrop_ca.paa' /> Open Parachute!</t>", "call ExHP_fnc_pullParachute", [], 6, true, true, "", "call ExHP_fnc_showParachute"];
+		ExHP_ACTION_EJECT = player addaction ["<t color='#E48A36'><img image='\a3\ui_f\data\gui\cfg\CommunicationMenu\supplydrop_ca.paa' /> Halo Jump</t>", "call ExHP_fnc_ejectPlayer", [], 6, false, true, "", "call ExHP_fnc_showEject;"];
 		
 		waitUntil{!alive player};
 		player removeAction ExHP_ACTION_PARACHUTE;

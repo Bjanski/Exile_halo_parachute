@@ -1,6 +1,6 @@
-/*  
-	config.cpp
-
+/*
+	fn_showParachute.sqf
+  
 	Copyright 2016 Jan Babor
 
 	Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,17 +16,20 @@
 	limitations under the License.
 
 */
+if(vehicle player != player)exitWith{false};
 
-class ExHP
-{
-	tag = "ExHP";
-	class Main
-	{
-		file = "ExHP\Functions";
-		class ejectPlayer {};
-		class pullParachute {};
-		class showEject {};
-		class showParachute {};
-		class customize {file = "ExHP\postInit.sqf"; postInit = 1;};
-	};
+_condition = false;
+
+if((getPos player) select 2 > ExHP_ACTION_PARACHUTE_HEIGHT)then{
+	_states = [
+		"ladderriflestatic",
+		"ladderrifledownloop",
+		"ladderrifleuploop",
+		"laddercivilstatic",
+		"laddercivildownloop",
+		"ladderciviluploop"
+	];
+	_condition = !((animationState player) in _states);
 };
+
+_condition
